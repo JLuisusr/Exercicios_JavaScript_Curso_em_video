@@ -1,0 +1,47 @@
+
+
+
+body{
+    background-color: rgb(37, 119, 241);
+    text-align: center;
+   
+
+}
+
+header{color: white;}
+#bloco{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 15px ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.365);
+}
+
+
+div#circular{
+    background-image: url('');
+    background-position: center;
+    border-radius: 50%;
+    height: 300px;
+    aspect-ratio: 1/1;
+    margin: auto;
+
+}
+
+p{
+    margin-top: 20px;
+    margin: 0px;
+    padding: 20px;
+    font-size: 32px;
+    color: black;
+}
+footer {
+    padding-top: 200px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+
+
+}
