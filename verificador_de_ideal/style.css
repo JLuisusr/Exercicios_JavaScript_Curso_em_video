@@ -22,3 +22,18 @@ main{
 input{
     margin: 10px;
 }
+
+img{
+    display: block;
+    text-align: center;
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: auto;
+}
+
+footer{
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
