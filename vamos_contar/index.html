@@ -11,18 +11,19 @@
     <main>
         <section>
 
-            <label for='ano'>Ano de Nascimento: </label>
-            <input type="number" max='2025' min='1925' value="2000" name="ano" id="ano"><br>
-            <label for="sexo">Sexo:</label>
-            <input type="radio" name="genero" id="generoM" value="um Homem" checked><label for="Sexo">Masculino</label>
-            <input type="radio" name="genero" id="generoF" value="uma Mulher"><label for="Sexo">Feminino</label><br>
-            <input onclick="verificar()" type="button" value=" Verificar ">
+            <label for='inicio'>Inicio:</label>
+            <input type="number" value="1" name="inicio" id="inicio"><br>
+            <label for='fim'>Fim:</label>
+            <input type="number" value="10" name="fim" id="fim"><br>
+            <label for='passo'>Passo:</label>
+            <input type="number" value="2" name="passo" id="passo"><br>
+            <input onclick="conta()" type="button" value=" Contar ">
 
 
 
         </section>
         <section>
-            <p id="resultado">Preencha os dados acima para ver o resultado!</p>
+            <p id="resultado">Contando:</p>
             
         </section>
     </main>
