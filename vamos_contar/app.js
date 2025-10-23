@@ -1,20 +1,27 @@
+function contagem(inicio,fim,passo,textoContagem){
+    for(var i = inicio; i <=fim; i = i + passo){
+        
+        textoContagem.innerHTML += `&#x1F919&#x1F3FC ${i} `
+             
 
+    }
+    return i 
+}
  
 function conta(){
-    var inicio = document.getElementById('inicio').value
-    var fim = document.getElementById('fim').value
-    var passo = document.getElementById('passo').value
-    console.log(inicio)
-    console.log(fim)
-    console.log(passo)
 
-function conta(inicio,fim,passo){
-    for(var i = inicio; i <=10;i+1){
-        console.log(i)
-        console.log(fim)
-        console.log(i+passo)
-    }
-}
+    var texto = document.createElement('p');
+        texto.id = 'textoConte';
+    document.getElementById('resultado').appendChild(texto);
+    var textoContagem = document.getElementById('textoConte')
+    var inicio = parseInt(document.getElementById('inicio').value)
+    var fim = parseInt(document.getElementById('fim').value)
+    var passo = parseInt(document.getElementById('passo').value)
+    contagem(inicio,fim,passo, textoContagem)
 
-conta(inicio,fim,passo)
-}
+
+
+
+
+}    
+
