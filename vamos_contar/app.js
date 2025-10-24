@@ -18,7 +18,10 @@ function conta(){
     var inicio = parseInt(document.getElementById('inicio').value)
     var fim = parseInt(document.getElementById('fim').value)
     var passo = parseInt(document.getElementById('passo').value)
-    contagem(inicio,fim,passo, textoContagem)
+    if( inicio == '' || fim == '' || passo == ''){
+        textoContagem.innerHTML += 'Impossivel contar!'
+    }else{
+        contagem(inicio,fim,passo, textoContagem)}
 
 
 
