@@ -12,7 +12,6 @@ function tabuada(){
 
         for(let i = 0; i < 10; i++){
             let elemento= document.createElement('option')
-
             elemento.text = `${numero} x ${i} = ${numero * i}`
             elemento.value = `tab${i}`
             tab.appendChild(elemento)
