@@ -1,15 +1,17 @@
 function contagem(inicio,fim,passo,textoContagem){
-    for(var i = inicio; i <=fim; i = i + passo){
-        
-        textoContagem.innerHTML += `&#x1F449&#x1F3FC ${i} `
-             
-
+    
+    if (inicio < fim ){ 
+        for(var i = inicio; i <=fim; i = i + passo){ 
+        textoContagem.innerHTML += `&#x1F449 ${i} `}
+    }
+    else{
+        for(var i = inicio; i >= fim; i = i - passo){ 
+        textoContagem.innerHTML += `&#x1F449 ${i} `}
     }
     textoContagem.innerHTML += `&#x1F3C1`
 }
  
 function conta(){
-
     var texto = document.createElement('p');
         texto.id = 'textoConte';
     document.getElementById('resultado').appendChild(texto);
@@ -18,14 +20,21 @@ function conta(){
     var inicio = parseInt(document.getElementById('inicio').value)
     var fim = parseInt(document.getElementById('fim').value)
     var passo = parseInt(document.getElementById('passo').value)
+<<<<<<< HEAD
+    
+    
+=======
     if( inicio == '' || fim == '' || passo == ''){
         textoContagem.innerHTML += 'Impossivel contar!'
     }else{
         contagem(inicio,fim,passo, textoContagem)}
+>>>>>>> 4b7b2fc4e475a3cca94875712c26e2a0d84af252
 
-
-
-
-
-}    
+    if ( isNaN(inicio)||isNaN(passo)|| isNaN(fim)){
+        textoContagem.innerHTML += `impossivel Contar`
+    }    
+    else{
+        contagem(inicio,fim,passo, textoContagem)
+    }
+}
 
